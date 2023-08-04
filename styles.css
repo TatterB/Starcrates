@@ -50,7 +50,7 @@ img {
     height: 95%;
     justify-content: center;
     position: relative;
-    top: 10;
+    top: 10px;
 }
 
 .unavailable {
