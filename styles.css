@@ -24,7 +24,7 @@ body {
     display: inline-flex;
     flex-wrap: nowrap;
     
-    overflow-x: auto;
+    overflow-x: hidden;
     gap:70px;
     max-width: 500px;
     
