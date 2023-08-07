@@ -12,22 +12,34 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorem soluta optio eum iusto commodi maiores sunt ipsa placeat, laborum beatae quibusdam sit sequi vel exercitationem assumenda nobis. Totam, repellat.</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur dolorem soluta optio eum iusto commodi maiores sunt ipsa placeat, laborum beatae quibusdam sit sequi vel exercitationem assumenda nobis. Totam, repellat.</p>
 
-    <div id="boxes">
-        <a href="" class="box"> 
-            <div><img src="images/KazCo_Crate.jpg" /> </div>
-        </a>
-        <a href="" class="box"> 
-            <div><img src="images/RedBarrle_Crate.jpg" /> </div>
-        </a>
-        <a href="" class="box">
-            <div><img src="images/White_Crate.jpg" /> </div>
-        </a>
-        <a href="" class="box"> </a>
-        <div class="unavailable">Unavailable</div>
-        <div class="unavailable">Unavailable</div>
-        <div class="unavailable">Unavailable</div>
-        <div class="unavailable">Unavailable</div>
+    <div id="boxesparent">
+        <div id="boxes">
+            <a href="" class="box"> 
+                <div><img src="images/KazCo_Crate.jpg" /> </div>
+                <div class="unavailable">Unavailable</div>
+            </a>
+            <a href="" class="box"> 
+                <div><img src="images/RedBarrle_Crate.jpg" /> </div>
+                <div class="unavailable">Unavailable</div>
+            </a>
+            <a href="" class="box">
+                <div><img src="images/White_Crate.jpg" /> </div>
+                <div class="unavailable">Unavailable</div>
+            </a>
+            <a href="" class="box"> 
+                <div class="unavailable">Unavailable</div>
+            </a>
+            
+        </div>
+
+        <div class="buttonparent">
+            <button class="arrow1" id="btn1">&#8592</button>
+            <button class="arrow2" id="btn2">&#8594</button>
+        </div>
+
     </div>
+    
+    <script src="events.js"></script>
 
 </body>
 </html>

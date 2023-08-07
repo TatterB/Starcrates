@@ -6,32 +6,49 @@ body {
     justify-content: center;
 }
 
-#boxes {
+#boxesparent {
+    display: inline-block;
     background: lightseagreen;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-    max-width: 916px;
-    width: calc(100% - 20px);
+    width: 570px;
     height: 520px;
+    justify-content: center;
+    align-items: center;
     margin: 50px auto;
     position: relative;
     top: 5%;
+    border-radius: 10px;
+    
+}
+
+#boxes {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    
+    overflow-x: auto;
+    gap:70px;
+    max-width: 500px;
+    
+    height: 520px;
+    
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 .box {
+    display: inline-block;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 1, 1, 0.5);
-    width: 150px;
+    min-width: 150px;
+    width: 400px;
     height: 400px;
     border-radius: 10px;
     position: relative;
-    top: 5%;
+    bottom: 6%;
+    left: 160px;
     transition: .3s ease;
-
+    text-decoration: none;
+    z-index: 1;             /* resolves hierarchy issue where div hover wasn't detected around button gap */
 }
 
 .box:hover {
@@ -58,11 +75,45 @@ img {
     height: 50px;
     width: 150px;
     border-radius: 10px;
+    color: black;
     background-color: gold;
     position: relative;
-    bottom: 8%;
-
+    top: 8%;
     font-size: 35;
     line-height: 1.4;
     font-family: Wendyville,sans-serif;    
+}
+
+.buttonparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 520px;
+    position: relative;
+    margin: -300px;
+}
+
+.buttonparent button {
+    background-color: rgba(255, 1, 1, 1);
+    color: white;
+    height: 60px;
+    min-width: 60px;
+    border-width: 2px;
+    border-radius: 70%;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s ease;
+
+}
+
+.buttonparent button:active {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.00);
+}
+
+.buttonparent button:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
 }
