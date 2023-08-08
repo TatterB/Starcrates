@@ -1,4 +1,4 @@
-//what we want to animate  
+//what we want to shift  
 
 const BOXES = document.getElementById('boxes');
 const BOX = document.getElementsByClassName('box');

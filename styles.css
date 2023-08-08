@@ -48,7 +48,7 @@ body {
     left: 160px;
     transition: .3s ease;
     text-decoration: none;
-    z-index: 1;             /* resolves hierarchy issue where div hover wasn't detected around button gap */
+    z-index: 2;             /* resolves hierarchy issue where div hover wasn't detected around button gap */
 }
 
 .box:hover {
@@ -91,12 +91,13 @@ img {
     gap: 520px;
     position: relative;
     margin: -300px;
+    z-index: 1;
 }
 
 .buttonparent button {
     background-color: rgba(255, 1, 1, 1);
     color: white;
-    height: 60px;
+    min-height: 60px; 
     min-width: 60px;
     border-width: 2px;
     border-radius: 70%;
